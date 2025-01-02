@@ -1,23 +1,52 @@
+// components/Hero.tsx
 import React from 'react';
-import Image from 'next/image';
-import img1 from "../../../public/img-2.jpg";
+import Image, { StaticImageData } from 'next/image';
 
-function Hero() {
+interface HeroProps {
+  backgroundImage: StaticImageData | string;
+  title: string;
+  description: string;
+  buttonText?: string;
+  buttonLink?: string;
+  imageAlt?: string;
+  className?: string;
+  showButton?: boolean;
+}
+
+function Hero({
+  backgroundImage,
+  title,
+  description,
+  buttonText = "Daftar Sekarang",
+  buttonLink = "#",
+  imageAlt = "Hero Background",
+  className = "",
+  showButton = true
+}: HeroProps) {
   return (
-    <div className="relative bg-blue-500 h-screen">
+    <div className={`relative bg-blue-500 h-screen ${className}`}>
       <Image
-        src={img1}
-        alt="Gambar Hero"
+        src={backgroundImage}
+        alt={imageAlt}
         layout="fill"
         objectFit="cover"
         className="opacity-75 transition-opacity duration-500"
+        priority
       />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center">
-        <h1 className="text-4xl font-extrabold mb-4 sm:text-6xl">MTs. Muhyiddin</h1> 
-        <p className="text-lg mb-6 sm:text-xl text-white">Sekolah Menengah Pertama yang Unggul dalam Membentuk Generasi Muda yang Berakhlak Mulia dan Berprestasi</p>
-        <button className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">
-          Daftar Sekarang
-        </button>
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center max-w-4xl px-4">
+        <h1 className="text-4xl font-extrabold mb-4 sm:text-6xl text-white">
+          {title}
+        </h1> 
+        <p className="text-lg mb-6 sm:text-xl text-white">
+          {description}
+        </p>
+        {showButton && (
+          <a href={buttonLink}>
+            <button className="bg-blue-800 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded transition-colors duration-300">
+              {buttonText}
+            </button>
+          </a>
+        )}
       </div>
     </div>
   );
