@@ -24,20 +24,20 @@ function Hero({
   showButton = true
 }: HeroProps) {
   return (
-    <div className={`relative bg-blue-500 h-screen ${className}`}>
+    <div className={`relative bg-blue-500 h-screen md:h-screen ${className}`}>
       <Image
         src={backgroundImage}
         alt={imageAlt}
         layout="fill"
         objectFit="cover"
-        className="opacity-75 transition-opacity duration-500"
+        className="opacity-100 transition-opacity duration-500"
         priority
       />
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center max-w-4xl px-4">
+      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-center w-full md:max-w-4xl md:px-4 ">
         <h1 className="text-4xl font-extrabold mb-4 sm:text-6xl text-white">
           {title}
         </h1> 
-        <p className="text-lg mb-6 sm:text-xl text-white">
+        <p className="text-lg mb-6 sm:text-base text-white">
           {description}
         </p>
         {showButton && (

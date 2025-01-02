@@ -51,7 +51,7 @@ const About = () => {
         
         <div className="grid md:grid-cols-2 gap-12">
           {/* Vision */}
-          <div className="bg-white p-8 rounded-xl shadow-lg ">
+          <div className="bg-white p-8 rounded-xl shadow-lg  ">
             <div className="inline-block p-3 bg-primary-100 rounded-lg mb-4">
               <Target className="h-8 w-8 text-primary-600" />
             </div>

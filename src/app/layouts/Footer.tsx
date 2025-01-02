@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube } from 'lucide-react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -18,11 +19,11 @@ const Footer = () => {
               </p>
               <p className="flex items-center gap-2 text-white">
                 <Phone className="h-5 w-5 " />
-                <span>+62 123 4567 8890</span>
+                <span>+62 818 0500 3572</span>
               </p>
               <p className="flex items-center gap-2 text-white">
                 <Mail className="h-5 w-5 " />
-                <span>info@mtsmuhyiddin.sch.id</span>
+                <span>mts.muhyiddin.quraniy@gmail.com</span>
               </p>
             </div>
           </div>
@@ -31,10 +32,10 @@ const Footer = () => {
           <div>
             <h3 className="text-white text-lg font-semibold mb-4">Tautan Cepat</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Beranda</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Profil</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">PPDB</a></li>
-              <li><a href="#" className="hover:text-primary-400 transition-colors">Kontak</a></li>
+              <li><Link href="/" className="hover:text-primary-400 transition-colors">Beranda</Link></li>
+              <li><Link href="/profil" className="hover:text-primary-400 transition-colors">Profil</Link></li>
+              <li><Link href="/ppdb" className="hover:text-primary-400 transition-colors">PPDB</Link></li>
+              <li><Link href="#" className="hover:text-primary-400 transition-colors">Kontak</Link></li>
             </ul>
           </div>
 

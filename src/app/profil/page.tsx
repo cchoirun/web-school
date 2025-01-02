@@ -1,6 +1,6 @@
 import Hero from "../layouts/HeroLayout";
 import MainLayout from "../layouts/MainLayout";
-import heroImage from "../../../public/img-5.jpg";
+import heroImage from "../../../public/hero-3.png";
 
 export default function Profil() {
   return (
@@ -23,7 +23,7 @@ export default function Profil() {
         <div className="mt-12 prose max-w-none">
           <div className="bg-white rounded-lg shadow-lg p-6 mb-8">
             <p className="text-gray-700 mb-6">
-              Madrasah Tsanawiyah (MTs) Muhyiddin adalah sebuah lembaga pendidikan tingkat SMP di bawah naungan Yayasan Pondok Pesantren Anda Lirboyo yang didirikan oleh Alm. Romo K.H. Achmad Thobib. Yayasan ini memfokuskan pada pengajaran Al-Qur'an baik dengan metode Simudaris maupun Tahfidz Al-Qur'an. MTs Muhyiddin telah memadukan antara kurikulum pendidikan agama dan kurikulum pendidikan nasional dengan berbasis pondok pesantren dengan ciri khas Islam Ahlussunnah Wal Jamaah.
+              Madrasah Tsanawiyah (MTs) Muhyiddin adalah sebuah lembaga pendidikan tingkat SMP di bawah naungan Yayasan Pondok Pesantren Anak-anak Muhyiddin yang didirikan oleh Alm. Romo K.H. Achmad Thobib. Yayasan ini memfokuskan pada pengajaran Al-Qur'an baik dengan metode Simudaris maupun Tahfidz Al-Qur'an. MTs Muhyiddin telah memadukan antara kurikulum pendidikan agama dan kurikulum pendidikan nasional dengan berbasis pondok pesantren dengan ciri khas Islam Ahlussunnah Wal Jama'ah.
             </p>
           </div>
 
