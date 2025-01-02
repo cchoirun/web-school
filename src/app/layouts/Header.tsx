@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import Image from 'next/image';
+import logo from "../../../public/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,7 +20,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center space-x-4">
           <Image 
-              src={require('../../../public/logo.png')}
+              src={logo}
               alt="Logo Sekolah"
               width={40}
               height={40}

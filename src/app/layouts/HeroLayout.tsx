@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import kbm from "../../../public/kbm-1.png";
 import img1 from "../../../public/img-2.jpg";
 
 function Hero() {
