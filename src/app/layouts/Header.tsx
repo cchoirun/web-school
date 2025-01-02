@@ -1,6 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import { Menu, X } from 'lucide-react';
+import Image from 'next/image';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -8,9 +9,6 @@ const Header = () => {
   const navItems = [
     { name: 'Beranda', href: '/' },
     { name: 'Profil', href: '/profil' },
-    { name: 'Program', href: '/program' },
-    { name: 'Fasilitas', href: '/fasilitas' },
-    { name: 'Berita', href: '/berita' },
     { name: 'PPDB', href: '/ppdb' },
     { name: 'Kontak', href: '/kontak' },
   ];
@@ -19,9 +17,16 @@ const Header = () => {
     <header className="bg-white shadow-md fixed w-full z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <div className="flex-shrink-0">
-            <h1 className="text-xl font-bold text-primary-600">MTs Muhyiddin</h1>
+          <div className="flex items-center space-x-4">
+          <Image 
+              src={require('../../../public/logo.png')}
+              alt="Logo Sekolah"
+              width={40}
+              height={40}
+            />
+            <div className="flex-shrink-0">
+              <h1 className="text-xl font-bold text-primary-600">MTs Muhyiddin</h1>
+            </div>
           </div>
 
           {/* Desktop Navigation */}

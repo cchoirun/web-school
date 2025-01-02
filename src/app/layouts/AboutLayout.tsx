@@ -22,7 +22,7 @@ const About = () => {
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center gap-2 text-primary-600">
                 <Users className="h-5 w-5" />
-                <span className="font-semibold">500+ Siswa</span>
+                <span className="font-semibold">100+ Siswa</span>
               </div>
               <div className="flex items-center gap-2 text-primary-600">
                 <BookOpen className="h-5 w-5" />
@@ -60,24 +60,9 @@ const About = () => {
             </div>
             <h3 className="text-2xl font-bold text-gray-900 mb-4">Visi</h3>
             <p className="text-gray-600 leading-relaxed mb-6">
-              "Menjadi lembaga pendidikan Islam terkemuka yang menghasilkan generasi 
-              Muslim berakhlak mulia, berprestasi unggul, dan berwawasan global 
-              berlandaskan Al-Qur'an dan As-Sunnah."
+              "Terbentuknya generasi islam yang beriman, beramal shaleh, berakhlaqul karimah, menguasai IPTEK, dan unggul dalam prestasi."
             </p>
-            <ul className="space-y-3">
-              <li className="flex items-start">
-                <span className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mr-2 flex-shrink-0">1</span>
-                <span className="text-gray-600">Keunggulan dalam pendidikan Islam</span>
-              </li>
-              <li className="flex items-start">
-                <span className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mr-2 flex-shrink-0">2</span>
-                <span className="text-gray-600">Prestasi akademik dan non-akademik</span>
-              </li>
-              <li className="flex items-start">
-                <span className="h-6 w-6 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 mr-2 flex-shrink-0">3</span>
-                <span className="text-gray-600">Pengembangan karakter Islami</span>
-              </li>
-            </ul>
+            
           </div>
 
           {/* Mission */}
@@ -91,31 +76,37 @@ const About = () => {
                 <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
                   <span className="font-semibold">1</span>
                 </div>
-                <p className="text-gray-600">Menyelenggarakan pendidikan Islam berkualitas dengan kurikulum terintegrasi</p>
+                <p className="text-gray-600">Meningkatkan keimanan dan ketaqwaan terhadap Allah SWT</p>
               </li>
               <li className="flex items-start gap-3">
                 <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
                   <span className="font-semibold">2</span>
                 </div>
-                <p className="text-gray-600">Mengembangkan program tahfidz dan pemahaman Al-Qur'an</p>
+                <p className="text-gray-600">Menanamkan nilai dasar keislaman melalui pembelajaran dan lingkungan</p>
               </li>
               <li className="flex items-start gap-3">
                 <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
                   <span className="font-semibold">3</span>
                 </div>
-                <p className="text-gray-600">Membangun karakter kepemimpinan dan kewirausahaan Islami</p>
+                <p className="text-gray-600">Melaksanakan pengembangan kurikulum sesuai dengan standar nasional</p>
               </li>
               <li className="flex items-start gap-3">
                 <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
                   <span className="font-semibold">4</span>
                 </div>
-                <p className="text-gray-600">Mengoptimalkan penggunaan teknologi dalam pembelajaran</p>
+                <p className="text-gray-600">Melaksanakan pembelajaran yang aktif, kreatif, efektif, inovatif dan menyenangkan di bidang akademik dan non akademik berbasis ITS</p>
               </li>
               <li className="flex items-start gap-3">
                 <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
                   <span className="font-semibold">5</span>
                 </div>
-                <p className="text-gray-600">Menjalin kerjasama dengan berbagai institusi pendidikan</p>
+                <p className="text-gray-600">Menghasilkan lulusan yang dapat bersaing pada jenjang pendidikan yang lebih tinggi</p>
+              </li>
+              <li className="flex items-start gap-3">
+                <div className="h-8 w-8 rounded-full bg-primary-100 flex items-center justify-center text-primary-600 flex-shrink-0">
+                  <span className="font-semibold">6</span>
+                </div>
+                <p className="text-gray-600">Melaksanakan bimbingan secara efektif sehingga siswa dapat berprestasi secara maksimal</p>
               </li>
             </ul>
           </div>
