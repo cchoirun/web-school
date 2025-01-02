@@ -14,19 +14,16 @@ const About = () => {
               Selamat Datang di MTs Muhyiddin
             </h2>
             <p className="text-gray-600 mb-6 leading-relaxed">
-              MTs Muhyiddin adalah lembaga pendidikan Islam yang berkomitmen untuk mengembangkan 
-              generasi Muslim yang berakhlak mulia, cerdas, dan berwawasan global. Dengan 
-              pengalaman lebih dari 15 tahun dalam dunia pendidikan, kami telah berhasil 
-              mencetak ribuan alumni yang berkualitas.
+            Madrasah Tsanawiyah (MTS) Muhyiddin adalah sebuah lembaga pendidikan tingkat SMP di bawah naungan Yayasan Pondok Pesantren Anak-anak Muhyiddin yang didirikan oleh Alm. Romo K.H. Achmad Thobib. Yayasan ini lebih menitikberatkan pada pengajaran Al-Qur'an, baik dengan metode Binnadhor maupun Tahfidz Al-Qur'an. MTs Muhyiddin Qur'aniy memadukan antara kurikulum kementrian agama dan kurikulum pendidikan nasional dengan berbasis pondok pesantren dengan ciri khas Islam Ahlussunnah Wal Jama'ah
             </p>
             <div className="grid grid-cols-2 gap-4">
               <div className="flex items-center gap-2 text-primary-600">
                 <Users className="h-5 w-5" />
-                <span className="font-semibold">100+ Siswa</span>
+                <span className="font-semibold">Madrasah berbasis IPTEK</span>
               </div>
               <div className="flex items-center gap-2 text-primary-600">
                 <BookOpen className="h-5 w-5" />
-                <span className="font-semibold">20+ Guru</span>
+                <span className="font-semibold">Guru profesional</span>
               </div>
               <div className="flex items-center gap-2 text-primary-600">
                 <Building2 className="h-5 w-5" />
@@ -34,14 +31,14 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 text-primary-600">
                 <Award className="h-5 w-5" />
-                <span className="font-semibold">Terakreditasi A</span>
+                <span className="font-semibold">Terakreditasi B</span>
               </div>
             </div>
           </div>
           <div className="relative">
             <div className="aspect-w-4 aspect-h-3 rounded-lg overflow-hidden shadow-xl relative h-[400px]">
               <Image
-                src={kbm} // Pastikan path gambar sesuai dengan struktur proyek Anda
+                src={kbm} 
                 alt="Suasana Sekolah"
                 fill
                 className="object-cover rounded-lg"
@@ -51,10 +48,10 @@ const About = () => {
           </div>
         </div>
 
-        {/* Vision & Mission bagian tetap sama ... */}
+        
         <div className="grid md:grid-cols-2 gap-12">
           {/* Vision */}
-          <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <div className="inline-block p-3 bg-primary-100 rounded-lg mb-4">
               <Target className="h-8 w-8 text-primary-600" />
             </div>
@@ -66,7 +63,7 @@ const About = () => {
           </div>
 
           {/* Mission */}
-          <div className="bg-white p-8 rounded-xl shadow-lg transform hover:scale-105 transition-transform duration-300">
+          <div className="bg-white p-8 rounded-xl shadow-lg ">
             <div className="inline-block p-3 bg-primary-100 rounded-lg mb-4">
               <Award className="h-8 w-8 text-primary-600" />
             </div>

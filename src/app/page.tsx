@@ -1,7 +1,7 @@
 import MainLayout from "./layouts/MainLayout";
 import Hero from "./layouts/HeroLayout";
 import About from "./layouts/AboutLayout";
-import heroImage from "../../public/img-2.jpg";
+import heroImage from "../../public/img-11.png";
 
 export default function Home() {
   return (
